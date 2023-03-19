@@ -6,7 +6,7 @@ from keras import layers, Input
 from keras.models import Sequential
 from keras.callbacks import EarlyStopping, ModelCheckpoint
 
-from classify_digits_CNN_funcs import plot_graph
+from plot_metrics import plot_graph
 from generator_class import DataGenerator
 
 NUM_IMAGES = 25000
