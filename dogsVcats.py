@@ -49,12 +49,10 @@ def main():
     model = Sequential()
     model.add(Input(shape=(*class_params['dim'], class_params['n_channels'])))
     model.add(layers.Conv2D(filters_conv0, 5, activation='relu'))
-    # model.add(layers.Conv2D(filters_conv0, 3, activation='relu'))
     model.add(layers.MaxPool2D())
     model.add(layers.Dropout(dropout))
 
     model.add(layers.Conv2D(filters_conv1, 5, activation='relu'))
-    # model.add(layers.Conv2D(filters_conv1, 3, activation='relu'))
     model.add(layers.MaxPool2D())
     model.add(layers.Dropout(dropout))
 
