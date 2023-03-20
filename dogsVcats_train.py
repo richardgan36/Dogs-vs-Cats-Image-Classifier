@@ -26,6 +26,7 @@ class_params = {'dim': (50, 50),
                 'n_channels': 1,
                 'shuffle': True,
                 'directory': '/Users/richardgan/Pictures/Machine Learning/train_dogVcats/'}
+                # directory is the name of the filepath where the training images are located
 
 
 def main():
