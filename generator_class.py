@@ -1,14 +1,14 @@
 """
+A data generator used in dogsVcats to pass batches of training images to the model.
+
 Adapted from:
 A. Amidi, S. Amidi, "A detailed example of how to use data generators with Keras", n.d.,
 available: https://stanford.edu/~shervine/blog/keras-how-to-generate-data-on-the-fly
 Date of retrieval: 26 Jan 2023
 """
 
-
 import numpy as np
 import keras
-
 from PIL import Image
 
 
@@ -60,15 +60,3 @@ class DataGenerator(keras.utils.Sequence):
             y[i] = self.labels[ID]
 
         return X, keras.utils.to_categorical(y, num_classes=self.n_classes)
-
-
-def pad_image(img_original, padded_height, padded_width):
-    img_height, img_width = img_original.shape
-    height_to_pad, width_to_pad = padded_height - img_height, padded_width - img_width
-    # Pad image with black borders on the right and bottom
-    img_width_padded = np.hstack(tup=(img_original, np.zeros(shape=(img_height, width_to_pad))))
-    img_width_and_height_padded = np.vstack(tup=(img_width_padded, np.zeros(shape=(height_to_pad, padded_width))))
-    img_width_and_height_padded = np.reshape(img_width_and_height_padded, (padded_height, padded_width, 1))
-
-    return img_width_and_height_padded
-
