@@ -17,5 +17,7 @@ An image must contain at least one of the two, but not both. Multiple instances 
 * Keras
 * Numpy
 
+### Training and Testing Dataset
 
+The training and testing images were too large to be uploaded to GitHub, but can be downloaded from [Kaggle](https://www.kaggle.com/competitions/dogs-vs-cats/data)
 
