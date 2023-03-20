@@ -5,7 +5,7 @@ An image must contain at least one of the two, but not both. Multiple instances 
 
 ![Alt Text](https://github.com/richardgan36/Dogs-vs-Cats-Image-Classifier/blob/main/screenshots/two_cats.jpg =250x250)
 
-
+<img src="https://github.com/richardgan36/Dogs-vs-Cats-Image-Classifier/blob/main/screenshots/two_cats.jpg" width=50% height=50%>
 
 
 
