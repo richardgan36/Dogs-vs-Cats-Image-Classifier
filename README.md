@@ -1,5 +1,7 @@
 # Dogs-vs-Cats-Image-Classifier
 
+![GitHub](https://img.shields.io/github/license/richardgan36/Dogs-vs-Cats-Image-Classifier)
+
 ## Introduction
 
 This is a an image classification model which leverages convolutional neural networks to classify images as either containing dogs or cats.
