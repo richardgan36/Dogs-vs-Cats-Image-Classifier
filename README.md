@@ -15,9 +15,9 @@ Python 3.10
 
 ### Required External Libraries
 
-* Tensorflow
-* Keras
-* Numpy
+* Tensorflow 2.9.2
+* Keras 2.9.0
+* Numpy 1.22.3
 
 ### Training and Testing Dataset
 
