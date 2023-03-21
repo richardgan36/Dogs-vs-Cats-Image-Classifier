@@ -22,7 +22,7 @@ Python 3.10
 ### Training and Testing Dataset
 
 The training and testing images can be downloaded from [Kaggle](https://www.kaggle.com/competitions/dogs-vs-cats/data).
-Be sure to update the directory name in dogsVcats.py.
+Be sure to update the directory name in dogsVcats_train.py.
 
 
 ## Limitations
@@ -31,6 +31,6 @@ An image must contain at least one cat or dog, but not both. Multiple instances 
 
 ## Usage
 
-Use dogsVcats.py to train the image classification model. Pass the filepath of your training images to the 
+Use dogsVcats_train.py to train the image classification model. Pass the filepath of your training images to the global variable `FILEPATH`, then run the program.
 
 
