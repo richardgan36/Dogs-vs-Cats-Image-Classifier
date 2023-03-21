@@ -1,5 +1,5 @@
 ![GitHub](https://img.shields.io/github/license/richardgan36/Dogs-vs-Cats-Image-Classifier)
-# Dogs-vs-Cats-Image-Classifier
+# Dogs vs Cats Image Classifier
 
 ## Introduction
 
