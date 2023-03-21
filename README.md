@@ -31,6 +31,7 @@ An image must contain at least one cat or dog, but not both. Multiple instances 
 
 ## Usage
 
-Use dogsVcats_train.py to train the image classification model. Pass the filepath of your training images to the global variable `FILEPATH`, then run the program.
+Use dogsVcats_train.py to train the image classification model. Pass the filepath of your training images to the variable `FILEPATH` and the name of the file that the model should be saved as to the variable `MODEL_NAME`, then run the program.
+To test a model on a single image, use dogsVcats_predict.py. Pass in the filepath of the image and run the program.
 
 
