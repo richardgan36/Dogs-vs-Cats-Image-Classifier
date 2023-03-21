@@ -11,6 +11,7 @@ from generator_class import DataGenerator
 
 NUM_IMAGES = 25000
 FILEPATH = '/Users/richardgan/Pictures/Machine Learning/train_dogVcats/'
+MODEL_NAME = 'dogsVcats_model5'
 
 # Hyperparameters
 filters_conv0 = 64
@@ -78,7 +79,7 @@ def main():
                                    patience=3,
                                    verbose=1)
 
-    model_checkpoint = ModelCheckpoint(filepath='trained_models/dogsVcats_model4.h5',
+    model_checkpoint = ModelCheckpoint(filepath='trained_models/' + MODEL_NAME + '.h5',
                                        monitor='val_loss',
                                        verbose=1,
                                        save_best_only=True)
