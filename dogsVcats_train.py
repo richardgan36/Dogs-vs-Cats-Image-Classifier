@@ -10,6 +10,7 @@ from plot_metrics import plot_graph
 from generator_class import DataGenerator
 
 NUM_IMAGES = 25000
+FILEPATH = '/Users/richardgan/Pictures/Machine Learning/train_dogVcats/'
 
 # Hyperparameters
 filters_conv0 = 64
@@ -25,7 +26,7 @@ class_params = {'dim': (50, 50),
                 'n_classes': 2,
                 'n_channels': 1,
                 'shuffle': True,
-                'directory': '/Users/richardgan/Pictures/Machine Learning/train_dogVcats/'}
+                'directory': FILEPATH}
                 # directory is the name of the filepath where the training images are located
 
 
@@ -34,7 +35,7 @@ def main():
     labels = {}
 
     training_samples = np.ceil((1 - validation_split) * NUM_IMAGES)
-    for i, filename in enumerate(glob.iglob('/Users/richardgan/Pictures/Machine Learning/train_dogVcats/*')):
+    for i, filename in enumerate(glob.iglob(FILEPATH + '*')):
         ID = filename[59:]  # Name of image without directory name
         if i < training_samples:
             partition['train'].append(ID)
